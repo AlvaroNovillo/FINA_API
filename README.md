@@ -1,17 +1,16 @@
-# **Documentation**
+# **Automated Results Collection from FINA**
 
-This python script is to automate the results collection from <a href="https://www.worldaquatics.com">FINA website</a>. The [website's API](#api-endpoint) will be called and
-CSVs of results will be downloaded based on user specified parameters in [config.py](config.py). This final excel will be named in this convention "GENDER DISTANCE STROKE.xlsx" (e.g. "F 200 FREESTYLE.xlsx").
+This Python script automates the process of collecting swimming results from the [FINA website](https://www.worldaquatics.com) by calling the [API](#api-endpoint). The results are saved as CSVs based on user-defined parameters specified in `config.py`, with the final Excel file named using the format: **GENDER DISTANCE STROKE.xlsx** (e.g., `F 200 FREESTYLE.xlsx`).
 
-<hr>
+---
 
-## **Requirements (Installation)**
+## **Installation**
 
-Change into current directory and run pip to install required packages using the following command
+To install the required packages, navigate to the directory and run:
 
-<pre><code>pip install -r requirements.txt</code></pre>
-<hr>
-
+```bash
+pip install -r requirements.txt
+```
 ## **Running the Script**
 
 Use the following command to run the script
