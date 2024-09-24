@@ -29,33 +29,20 @@ API Endpoint is:
 <pre>
     <code>
         params={
-                "distance": distance,
-                "gender": gender,
-                "stroke": stroke,
-                "poolConfiguration": poolConfiguration,
-                "year": year,
-                "startDate": startDate,
-                "endDate": endDate,
-                "timesMode": timesMode,
+                "distance": distance, Distance in metres [e.g. (50, 100, 200, 400, 800, 1500). Note for relays (e.g. 4x100, 4x200), leave as 100 or 200]
+                "gender": gender,  M is Men, F is Women [e.g. (M or F)]
+                "stroke": stroke, Stroke or Style <u>in CAPS</u> [e.g. (FREESTYLE, FREESTYLE_RELAY, BACKSTROKE, BUTTERFLY, MEDLEY)]
+                "poolConfiguration": poolConfiguration, Pool configuration/length [e.g. LCM or SCM (LCM is 50m, SCM is 25m)]
+                "year": year, Year filter (leave blank if filtering by date range)
+                "startDate": startDate, Filter by Start Date (<u>in URL encoded format</u>) [e.g. 01/01/2019 will be "01%2F01%2F2019", whereby %2F denotes a "/"]
+                "endDate": endDate, Filter by End Date (<u>in URL encoded format</u>) [e.g. 31/12/2022 will be "31%2F12%2F2022", whereby %2F denotes a "/"]
+                "timesMode": timesMode, Get all timings or only best timings [e.g. (ALL_TIMES, BEST_TIMES)]
                 "pageSize": pageSize,
-                "countryId": countryId,
+                "countryId": countryId, ID of country (this is referenced from [countries.json](countries.json) file, id is provided by FINA website and can be found using network tab of developer console)
             },
     </code>
 </pre>
 
-### **Whereby:**
-
-- **distance** = Distance in metres [e.g. (50, 100, 200, 400, 800, 1500). Note for relays (e.g. 4x100, 4x200), leave as 100 or 200]
-- **gender** = M is Men, F is Women [e.g. (M or F)]
-- **stroke** = Stroke or Style <u>in CAPS</u> [e.g. (FREESTYLE, FREESTYLE_RELAY, BACKSTROKE, BUTTERFLY, MEDLEY)]
-- **poolConfiguration** = Pool configuration/length [e.g. LCM or SCM (LCM is 50m, SCM is 25m)]
-- **year** = Year filter (leave blank if filtering by date range)
-- **startDate** = Filter by Start Date (<u>in URL encoded format</u>) [e.g. 01/01/2019 will be "01%2F01%2F2019", whereby %2F denotes a "/"]
-- **endDate** = Filter by End Date (<u>in URL encoded format</u>) [e.g. 31/12/2022 will be "31%2F12%2F2022", whereby %2F denotes a "/"]
-- **timesMode** = Get all timings or only best timings [e.g. (ALL_TIMES, BEST_TIMES)]
-- **countryId** = ID of country (this is referenced from [countries.json](countries.json) file, id is provided by FINA website and can be found using network tab of developer console)
-
-<br/>
 
 ### **Changing Parameters**
 
